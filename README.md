@@ -34,7 +34,7 @@ Let's build a project based on everyone's favorite app, Netflix. We want users t
 * You should have an example of building an Api service handy. Copy and paste it into this project.
 * This is the service used to connect to the MovieDB Api.
 * Copy and paste it into this project.
-* The url should be https://api.themoviedb.org/3/
+* The url should be ng 
 * This service needs a get method.
 * This service has one more responsiblity than we have not seen before. It must append the api key to every request. `&api_key=yourkey`. Just hard code this in the get method.
 
