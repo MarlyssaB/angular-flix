@@ -1,4 +1,5 @@
 import { Component,OnInit } from '@angular/core';
+import { MovieServiceService } from './movie-service.service';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,16 @@ import { Component,OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
+  constructor(private movieService: MovieServiceService) {
+    
+  }
+
+  
   ngOnInit(): void {
+    this.searchResults=this.movieService.getSearchResults();
+    this.myMovieList=this.movieService.getMovieList();
+    this.movieService.loadMovieList();
    
   }
   searchResults = [];
